@@ -1,8 +1,7 @@
 const router = require('express').Router();
-const { Project, User } = require('../models'); // this will be different according to the models I create
+const { User, Post, Comment } = require('../models');
 const withAuth = require('../utils/auth');
-
-
+const sequelize = require('../config/connection');
 
 // this is where I'll write the homeRoutes
 

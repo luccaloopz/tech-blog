@@ -1,8 +1,8 @@
 const router = require('express').Router();
-const { User } = require('../../models');
+const { Post } = require('../../models');
 const withAuth = require('../../utils/auth');
 const sequelize = require('../../config/connection');
 
-// this is where ill write the user routes...
+// this is where ill write the post routes...
 
 module.exports = router;
