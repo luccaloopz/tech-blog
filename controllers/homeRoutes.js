@@ -47,20 +47,29 @@ router.get('/signup', (req, res) => {
 router.get('/post/:id', async (req, res) => {
     try {
         const postData = await Post.findByPk(req.params.id, {
-            include: {
-                model: User,
-                attributes: ['username']
-            }
+            include: [
+                {
+                    model: Comment,
+                    include: {
+                        model: User,
+                        attributes: ['username']
+                    }
+                },
+                {
+                    model: User,
+                    attributes: ['username']
+                }
+            ]
         });
 
         if (!postData) {
             res.status(404).json({ message: "No post found with this id!"});
             return;
         } else {
-            const posts = postData.map((post) => post.get({ plain: true }));
+            const post = postData.get({ plain: true });
 
             res.render('one-post', {
-                posts,
+                post,
                 logged_in: req.session.logged_in
             })
         };

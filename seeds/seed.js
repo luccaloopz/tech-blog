@@ -8,6 +8,7 @@ const seedAll = async () => {
     await seedUsers();
     await seedPosts();
     await seedComments();
+    console.log('\n----- DATABASE SEEDED -----\n')
     process.exit(0);
 };
 
