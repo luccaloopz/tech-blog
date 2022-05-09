@@ -95,11 +95,16 @@
                     </div>
                 </form>
             </div>
-        </main>
 
-        <footer>
-            <h1 id="footer" class="titles fs-1">Thanks For Visiting!</h1>
-        </footer>
+            <!-- below here is what the dashboard looks like -->
+            <p class="h1">Your Posts</p>
+
+            <div class="card mb-2">
+                <div class="card-header">
+                    <p class="card-text"><a class="text-decoration-none" href="#">{{title}} - {{format_date created_at}}</a></p>
+                </div>
+            </div>
+        </main>
 
         <!-- Render script for logged in users only -->
         {{#if logged_in}}

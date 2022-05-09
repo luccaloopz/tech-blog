@@ -1,0 +1,10 @@
+{{#if posts.length}}
+
+<p class="h1">Your Posts</p>
+
+{{#each posts as |post|}}
+{{> dashboard-card post}}
+{{/each}}
+
+{{/if}}
+
