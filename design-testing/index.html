@@ -104,6 +104,44 @@
                     <p class="card-text"><a class="text-decoration-none" href="#">{{title}} - {{format_date created_at}}</a></p>
                 </div>
             </div>
+
+            <!-- below is what the edit-post looks like -->
+            <div class="card">
+                <div class="card mb-2">
+                    <div class="card-header">
+                        <p class="card-text">Edit Post</p>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <label for="editPostTitle" class="form-label text-dark">Title</label>
+                    <input class="form-control" id="editPostTitle" rows="1" value="{{title}}"></input>
+                    <label for="editPostContent" class="form-label text-dark mt-1">Content</label>
+                    <input class="form-control" id="editPostContent" value="{{post_text}}"></input>
+                </div>
+                <div class="d-grid gap-2 p-3">
+                    <button class="btn btn-outline-primary" type="button" id="updatePostBtn">Update</button>
+                    <button class="btn btn-outline-danger" type="button" id="deletePostBtn">Delete</button>
+                </div>
+            </div>
+
+            <!-- below is what the create-post looks like -->
+            <div class="card">
+                <div class="card mb-2">
+                    <div class="card-header">
+                        <p class="card-text">Create a Post</p>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <label for="createPostTitle" class="form-label text-dark">Title</label>
+                    <textarea class="form-control" id="createPostTitle" rows="1"></textarea>
+                    <label for="createPostContent" class="form-label text-dark mt-1">Content</label>
+                    <textarea class="form-control" id="createPostContent"></textarea>
+                </div>
+                <div class="d-grid gap-2 p-3">
+                    <button class="btn btn-outline-primary" type="button" id="createPostBtn">Create</button>
+                </div>
+            </div>
+            
         </main>
 
         <!-- Render script for logged in users only -->

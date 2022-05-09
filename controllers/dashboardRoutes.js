@@ -25,7 +25,7 @@ router.get('/', withAuth, async (req, res) => {
     }
 });
 
-router.put('/edit/:id', withAuth, (req, res) => {
+router.get('/edit/:id', withAuth, async (req, res) => {
     try {
         const postData = await Post.findByPk(req.params.id);
 
@@ -45,5 +45,9 @@ router.put('/edit/:id', withAuth, (req, res) => {
         res.status(500).json(err);
     }
 });
+
+router.get('/create', withAuth, (req, res) => {
+    res.render('create-post')
+})
 
 module.exports = router;
