@@ -7,7 +7,7 @@ const updatePostHandler = async (event) => {
     const id = window.location.toString().split('/')[window.location.toString().split('/').length - 1];
         
     if (title && post_text) {
-        // Send a POST request to the API endpoint
+        // Send a PUT request to the API endpoint
         const response = await fetch(`/api/posts/${id}`, {
             method: 'PUT',
             body: JSON.stringify({ title, post_text }),
