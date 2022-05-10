@@ -4,22 +4,22 @@ const comments = [
     {
         user_id: 1,
         post_id: 2,
-        comment_text: "I also love cycling!"
+        comment_text: "Great post!"
     },
     {
         user_id: 2,
         post_id: 3,
-        comment_text: "I also love movies!"
+        comment_text: "Awesome!"
     },
     {
         user_id: 3,
         post_id: 4,
-        comment_text: "I also love food!"
+        comment_text: "I completely agree!"
     },
     {
         user_id: 4,
         post_id: 1,
-        comment_text: "I also love gaming!"
+        comment_text: "Absolutely!"
     }
 ];
 

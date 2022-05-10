@@ -2,23 +2,23 @@ const { Post } = require('../models');
 
 const posts = [
     {
-        'title': 'Gaming',
-        'post_text': "I love video games, they're so much fun!",
+        'title': 'Coding',
+        'post_text': "I love to code! It allows me to build really neat applications!",
         'user_id': 1
     },
     {
-        'title': 'Cycling',
-        'post_text': "It's really fun to be able to take your bike and just ride it for hours and hours on a big open road and on a nice sunny day.",
+        'title': 'JavaScript',
+        'post_text': "JavaScript is a fun but rather tough coding language to learn.",
         'user_id': 2
     },
     {
-        'title': 'Movies',
-        'post_text': "I love to watch movies by myself or with some friends.",
+        'title': 'Pair Programming',
+        'post_text': "I love pair programming. It's very helpful to have someone by your side when you're trying to overcome a challenging coding problem!",
         'user_id': 3
     },
     {
-        'title': 'Food',
-        'post_text': "I don't have a favorite food or cuisine, I love all types of foods!",
+        'title': 'Full Stack Applications',
+        'post_text': "It's so much fun learning how to build full stack applications!",
         'user_id': 4
     },
 ];
