@@ -1,10 +1,10 @@
 <div class="d-md-flex justify-content-md-end">
-    <button class="btn btn-success btn-lg" type="button">Create a post</button>
+    <a class="text-decoration-none text-white" href="/dashboard/create"><button class="btn btn-success btn-lg " type="submit">Create a post</button></a>
 </div>
 
 {{#if posts.length}}
 
-<p class="h1">Your Posts</p>
+<p class="h1 text-white">Your Posts</p>
 
 {{#each posts as |post|}}
 
@@ -14,6 +14,6 @@
 
 {{else}}
 
-<p class="h4 text-center">You don't have any posts.</p>
+<p class="h4 text-center text-white">You don't have any posts.</p>
 
 {{/if}}

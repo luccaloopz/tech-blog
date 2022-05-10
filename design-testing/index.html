@@ -133,15 +133,17 @@
                         <p class="card-text">Create a Post</p>
                     </div>
                 </div>
-                <div class="card-body">
-                    <label for="createPostTitle" class="form-label text-dark">Title</label>
-                    <textarea class="form-control" id="createPostTitle" rows="1"></textarea>
-                    <label for="createPostContent" class="form-label text-dark mt-1">Content</label>
-                    <textarea class="form-control" id="createPostContent"></textarea>
-                </div>
-                <div class="d-grid gap-2 p-3">
-                    <button class="btn btn-outline-primary" type="button" id="createPostBtn">Create</button>
-                </div>
+                <form class="create-post-form">
+                    <div class="card-body">
+                        <label for="createPostTitle" class="form-label text-dark">Title</label>
+                        <textarea class="form-control" id="createPostTitle" rows="1"></textarea>
+                        <label for="createPostContent" class="form-label text-dark mt-1">Content</label>
+                        <textarea class="form-control" id="createPostContent"></textarea>
+                    </div>
+                    <div class="d-grid gap-2 p-3">
+                        <button class="btn btn-outline-primary" type="button" id="createPostBtn">Create</button>
+                    </div>
+                </form>
             </div>
 
             <!-- what is shown if the user goes to their dashboard and there are no posts -->

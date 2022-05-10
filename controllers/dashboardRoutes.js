@@ -47,7 +47,7 @@ router.get('/edit/:id', withAuth, async (req, res) => {
 });
 
 router.get('/create', withAuth, (req, res) => {
-    res.render('create-post')
+    res.render('create-post');
 });
 
 module.exports = router;
